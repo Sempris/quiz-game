@@ -365,4 +365,49 @@ const questions = [
             { text: 'D: Lives', correct: false }
         ]
     },
+    {
+        question: 'A lullaby is a song sung to babies to help them do what',
+        answers: [
+            { text: 'A: Wake up', correct: false },
+            { text: 'B: Fall asleep', correct: true },
+            { text: 'C: Eat', correct: false },
+            { text: 'D: Invest wisely', correct: false }
+        ]
+    },
+    {
+        question: 'In history books, leaders named Alexander and Catherine both share what flattering title?',
+        answers: [
+            { text: 'A: The Ferocious', correct: false },
+            { text: 'B: The Great', correct: true },
+            { text: 'C: The Unruly', correct: false },
+            { text: 'D: The Eco-Conscious', correct: false }
+        ]
+    },
+    {
+        question: 'You\'re most likely to hear the announcement "Please remain seated until the captain has turned off the \'Fasten Seat Belt\' sign" while doing what?',
+        answers: [
+            { text: 'A: Shopping for groceries', correct: false },
+            { text: 'B: Flying in an airplane', correct: true },
+            { text: 'C: Getting a haircut', correct: false },
+            { text: 'D: Being abducted by aliens', correct: false }
+        ]
+    },
+    {
+        question: 'What notable part of our nation\'s topography accounts for roughly 20 percent of the fresh water on Earth?',
+        answers: [
+            { text: 'A: Death Valley', correct: false },
+            { text: 'B: Grand Canyon', correct: false },
+            { text: 'C: The Great Lakes', correct: true },
+            { text: 'D: Mark Zuckerberg\'s hot tub', correct: false }
+        ]
+    },
+    {
+        question: 'A person who is preparing to work hard is said to be "rolling up his" what?',
+        answers: [
+            { text: 'A: Sleeves', correct: true },
+            { text: 'B: Curtains', correct: false },
+            { text: 'C: Towels', correct: false },
+            { text: 'D: Mötley Crüe posters', correct: false }
+        ]
+    },
 ]
