@@ -357,15 +357,6 @@ const questions = [
         ]
     },
     {
-        question: 'Where would you most likely hear the request "Cleanup in aisle 5"?',
-        answers: [
-            { text: 'A: Savings bank', correct: false },
-            { text: 'B: Supermarket', correct: true },
-            { text: 'C: Kindergarten', correct: false },
-            { text: 'D: Roller coaster', correct: false }
-        ]
-    },
-    {
         question: 'By definition, a 10-speed bike has 10 what?',
         answers: [
             { text: 'A: Wheels', correct: false },
