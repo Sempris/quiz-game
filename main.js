@@ -1,51 +1,51 @@
-const startButton = document.getElementById('start-btn')
-const nextButton = document.getElementById('next-btn')
-const questionContainerElement = document.getElementById('question-container')
-const questionElement = document.getElementById('question')
-const answerButtonsElement = document.querySelector('#answer-buttons')
-const winningPool = document.getElementById('winning')
-const checkBoxOutput = document.getElementById('checkbox')
+const startButton = document.getElementById('start-btn');
+const nextButton = document.getElementById('next-btn');
+const questionContainerElement = document.getElementById('question-container');
+const questionElement = document.getElementById('question');
+const answerButtonsElement = document.querySelector('#answer-buttons');
+const winningPool = document.getElementById('winning');
+const checkBoxOutput = document.getElementById('checkbox');
 
 let shuffledQuestions, currentQuestionIndex
 
-startButton.addEventListener('click', startGame)
+startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
-    currentQuestionIndex++
-    setNextQuestion()
+    currentQuestionIndex++;
+    setNextQuestion();
 })
 
 function startGame() {
-    startButton.classList.add('hide')
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    questionContainerElement.classList.remove('hide')
-    setNextQuestion()
+    startButton.classList.add('hide');
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
+    questionContainerElement.classList.remove('hide');
+    setNextQuestion();
 }
 
 function setNextQuestion() {
-    resetState()
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    resetState();
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
 function showQuestion(question) {
-    questionElement.innerText = question.question
+    questionElement.innerText = question.question;
     question.answers.forEach(answer => {
-        const button = document.createElement('button')
-        button.innerText = answer.text
-        button.classList.add('btn')
-        button.setAttribute('data-correct', answer.correct)
-        button.addEventListener('click', selectAnswer)
-        answerButtonsElement.insertAdjacentElement('beforeend', button)
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn');
+        button.setAttribute('data-correct', answer.correct);
+        button.addEventListener('click', selectAnswer);
+        answerButtonsElement.insertAdjacentElement('beforeend', button);
     })
-    winningPool.innerText = `🏆 ${counter} 🪙`
+    winningPool.innerText = `🏆 ${counter} 🪙`;
 }
 
 function resetState() {
-    clearStatusClass(document.body)
-    checkBoxOutput.innerText = ''
-    nextButton.classList.add('hide')
+    clearStatusClass(document.body);
+    checkBoxOutput.innerText = '';
+    nextButton.classList.add('hide');
     while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
 }
 let counter = 0;
@@ -60,10 +60,10 @@ let callCounter = counting();
 var img = document.createElement("img");
 
 function selectAnswer(e) {
-    const selectedButton = e.target
-    const selectedData = selectedButton.dataset.correct
+    const selectedButton = e.target;
+    const selectedData = selectedButton.dataset.correct;
     if (selectedData === 'true') {
-        winningPool.innerText = `🏆 ${callCounter()} 🪙`
+        winningPool.innerText = `🏆 ${callCounter()} 🪙`;
         img.src = "yes.gif";
         checkBoxOutput.appendChild(img);
     }
@@ -73,25 +73,25 @@ function selectAnswer(e) {
     }
     [...answerButtonsElement.children].forEach(button => {
         if (button.dataset.correct === 'true') {
-            button.classList.add('correct')
+            button.classList.add('correct');
         }
         else {
-            button.classList.add('wrong')
+            button.classList.add('wrong');
         }
     })
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
-        nextButton.classList.remove('hide')
+        nextButton.classList.remove('hide');
     } else {
-        startButton.innerText = 'Restart'
-        startButton.classList.add('re')
+        startButton.innerText = 'Restart';
+        startButton.classList.add('re');
         counter = 0;
-        startButton.classList.remove('hide')
+        startButton.classList.remove('hide');
     }
 }
 
 function clearStatusClass(element) {
-    element.classList.remove('correct')
-    element.classList.remove('wrong')
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
 }
 
 const questions = [
