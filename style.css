@@ -89,7 +89,7 @@ body.wrong {
 }
 
 .start-btn .fas:hover, .next-btn .fas:hover {
-    animation: pulse 1s infinite;
+    animation: pulse 1.3s infinite;
     animation-timing-function: linear;
 }
 
