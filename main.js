@@ -437,4 +437,13 @@ const questions = [
             { text: 'D: Shamrock', correct: true }
         ]
     },
+    {
+        question: 'According to studies, what should a typical teenager spend up to 10 hours a night doing?',
+        answers: [
+            { text: 'A: Partying', correct: false },
+            { text: 'B: Thistle', correct: false },
+            { text: 'C: Tweeting', correct: false },
+            { text: 'D: Sleeping', correct: true }
+        ]
+    },
 ]
