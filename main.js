@@ -428,4 +428,13 @@ const questions = [
             { text: 'D: Stealthy', correct: false }
         ]
     },
+    {
+        question: 'Which plant is a national symbol of Ireland?',
+        answers: [
+            { text: 'A: Rose', correct: false },
+            { text: 'B: Thistle', correct: false },
+            { text: 'C: Leek', correct: false },
+            { text: 'D: Shamrock', correct: true }
+        ]
+    },
 ]
