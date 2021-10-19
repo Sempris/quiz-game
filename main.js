@@ -419,4 +419,13 @@ const questions = [
             { text: 'D: Ding dong', correct: false }
         ]
     },
+    {
+        question: 'According to the proverb, "Early to bed and early to rise" makes you "healthy, wealthy and" what?',
+        answers: [
+            { text: 'A: Wise', correct: true },
+            { text: 'B: Boring', correct: false },
+            { text: 'C: Brave', correct: false },
+            { text: 'D: Stealthy', correct: false }
+        ]
+    },
 ]
