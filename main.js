@@ -473,4 +473,13 @@ const questions = [
             { text: 'D: Spike', correct: false }
         ]
     },
+    {
+        question: 'In texting abbreviation, what does BFF stand for?',
+        answers: [
+            { text: 'A: Buff Fit Fella', correct: false },
+            { text: 'B: Bye for Five', correct: false },
+            { text: 'C: Boy Friend Furious', correct: false },
+            { text: 'D: Best Friends Forever', correct: true }
+        ]
+    },
 ]
