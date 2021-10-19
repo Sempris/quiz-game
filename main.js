@@ -446,4 +446,13 @@ const questions = [
             { text: 'D: Sleeping', correct: true }
         ]
     },
+    {
+        question: 'Which of these is a musical instrument?',
+        answers: [
+            { text: 'A: Mandrake', correct: false },
+            { text: 'B: Mandalay', correct: false },
+            { text: 'C: Mandolin', correct: true },
+            { text: 'D: Mandrill', correct: false }
+        ]
+    },
 ]
