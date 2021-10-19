@@ -464,4 +464,13 @@ const questions = [
             { text: 'D: Imperiled', correct: false }
         ]
     },
+    {
+        question: 'What is the name of the code entered at the ATM to receive money?',
+        answers: [
+            { text: 'A: Pin', correct: true },
+            { text: 'B: Neil', correct: false },
+            { text: 'C: Jeff', correct: false },
+            { text: 'D: Spike', correct: false }
+        ]
+    },
 ]
