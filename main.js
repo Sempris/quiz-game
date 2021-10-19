@@ -455,4 +455,13 @@ const questions = [
             { text: 'D: Mandrill', correct: false }
         ]
     },
+    {
+        question: 'Which word is normally used to describe animals at risk of extinction?',
+        answers: [
+            { text: 'A: Jeopardized', correct: false },
+            { text: 'B: Menaced', correct: false },
+            { text: 'C: Endangered', correct: true },
+            { text: 'D: Imperiled', correct: false }
+        ]
+    },
 ]
