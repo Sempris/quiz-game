@@ -410,4 +410,13 @@ const questions = [
             { text: 'D: Mötley Crüe posters', correct: false }
         ]
     },
+    {
+        question: 'In a popular style of joke, what traditionally comes before "Who\'s there?"',
+        answers: [
+            { text: 'A: Rat-a-tat-tat', correct: false },
+            { text: 'B: Cooee', correct: false },
+            { text: 'C: Knock-knock', correct: true },
+            { text: 'D: Ding dong', correct: false }
+        ]
+    },
 ]
