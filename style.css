@@ -137,3 +137,22 @@ body.wrong {
     padding: 20px 50px;
     font-size: 3rem;
 }
+
+@media screen and (max-width: 640px) {
+    .container {
+        font-size: 1.3rem;
+    }
+    .btn {
+        font-size: 1rem;
+    }
+    .checkbox img {
+        width: 150px;
+        height: 150px;
+    }
+    .start-btn {
+        font-size: 4rem;
+    }
+    .next-btn {
+        font-size: 3rem;
+    }
+}

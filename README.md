@@ -2,4 +2,12 @@
 
 This quiz game was made for the module project of Programming basic at DCI.
 
-v 0.1 - basic interace and functionality are available.
+Technologies used:
+
+- onClick Event
+- closure function
+- DOM manipulation
+
+v 0.1 - basic interface and functionality are available.
+
+v 0.2 - mobile optimization added.
