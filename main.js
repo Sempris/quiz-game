@@ -37,7 +37,7 @@ function showQuestion(question) {
         button.addEventListener('click', selectAnswer);
         answerButtonsElement.insertAdjacentElement('beforeend', button);
     })
-    winningPool.innerText = `🏆 ${counter} 🪙`;
+    winningPool.innerText = `🏆 ${counter} 💰`;
 }
 
 function resetState() {
@@ -63,7 +63,7 @@ function selectAnswer(e) {
     const selectedButton = e.target;
     const selectedData = selectedButton.dataset.correct;
     if (selectedData === 'true') {
-        winningPool.innerText = `🏆 ${callCounter()} 🪙`;
+        winningPool.innerText = `🏆 ${callCounter()} 💰`;
         img.src = "yes.gif";
         checkBoxOutput.appendChild(img);
     }
