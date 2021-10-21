@@ -1,5 +1,9 @@
 # Quiz Game
 
+![display](display.png)
+
+[Live Version](https://sempris.github.io/quiz-game/)
+
 This quiz game was made for the module project of Programming basic at DCI.
 
 The purpose of the module project is to showcase the knowledge of basic JavaScript.
